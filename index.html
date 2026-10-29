@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rheana Lyn Estero | IT Portfolio</title>
+<meta name="description" content="Portfolio of an aspiring IT professional in frontend web development, computer networking, and database management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="brand" href="#top"></a>
+  <nav aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certs">Certifications</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="net" aria-hidden="true"></canvas>
+    <figure class="photo">
+      <span class="initials" aria-hidden="true">RE</span>
+      <!-- Save your photo as profile.jpg in this folder (a square crop works best) -->
+      <img src="https://i.pinimg.com/736x/0d/cb/aa/0dcbaabb421a1ce9052ba39eacd3b2e0.jpg" alt="Photo of Your Name" width="320" height="320" onerror="this.remove()">
+    </figure>
+    <div class="hero-text">
+      <h1>Rheana Lyn Estero</h1>
+      <p class="lead">Aspiring IT professional in frontend web development, computer networking, and database management.</p>
+      <p class="hint">Click anywhere on the network to send a packet.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <!-- Put your resume PDF in this folder and name it resume.pdf -->
+        <a class="btn" href="resume.pdf" download>Download resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="wrap">
+    <h2>About</h2>
+    <p class="measure">I have hands-on experience in frontend web development, computer networking, and database management, built on a strong foundation in information technology. I also have exposure to content management, SEO, and process documentation.</p>
+    <ul class="skills">
+      <li><strong>Frontend</strong> HTML, CSS, JavaScript, React, Tailwind CSS</li>
+      <li><strong>Networking</strong> Switching, routing, wireless, troubleshooting</li>
+      <li><strong>Databases</strong> SQL, MySQL, phpMyAdmin</li>
+      <li><strong>Content</strong> Content management, SEO, documentation</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="wrap">
+    <h2>Projects</h2>
+    <!-- Add a link to any project with: <a class="more" href="URL">View project</a> -->
+    <article class="row">
+      <div>
+        <h3>Enrollment System for Nuestra Señora de Guia Academy of Marikina</h3>
+        <p>My capstone project: a web-based enrollment system with role-based access, a technical report, and a system test plan.</p>
+      </div>
+      <ul class="tags"><li>Web app</li><li>Database</li><li>Capstone</li></ul>
+    </article>
+    <article class="row">
+      <div>
+        <h3>Computer Lab Action Research</h3>
+        <p>A group action research paper on the FEU Roosevelt computer lab, covering Deep-Freeze and cache allocation problems we observed.</p>
+      </div>
+      <ul class="tags"><li>Research</li><li>Systems</li></ul>
+    </article>
+    <article class="row">
+      <div>
+        <h3>Student Portal Database</h3>
+        <p>A practice schema (students, courses, departments, subjects, enrollments, grades) that I use to write and test SQL queries.</p>
+      </div>
+      <ul class="tags"><li>SQL</li><li>MySQL</li></ul>
+    </article>
+    <article class="row">
+      <div>
+        <h3>AI Asset Pipeline and Model Benchmarking</h3>
+        <p>A Python and Hugging Face pipeline that generates images with FLUX.1-schnell and SDXL Base, with a benchmarking report comparing both models.</p>
+      </div>
+      <ul class="tags"><li>Python</li><li>Hugging Face</li></ul>
+    </article>
+  </section>
+
+  <section id="certs" class="wrap">
+    <h2>Certifications and training</h2>
+    <article class="row">
+      <div><h3>Introduction to Networks (CCNA 1)</h3><p>Cisco Networking Academy</p></div>
+      <ul class="tags"><li>Completed</li></ul>
+    </article>
+    <article class="row">
+      <div><h3>Switching, Routing, and Wireless Essentials (CCNA 2)</h3><p>Cisco Networking Academy</p></div>
+      <ul class="tags"><li>Completed</li></ul>
+    </article>
+    <article class="row">
+      <div><h3>Certified Artificial Intelligence Professional (CAIP)</h3><p>FEU Roosevelt, with East West International Educational Specialists</p></div>
+      <ul class="tags"><li>Add status or date</li></ul>
+    </article>
+  </section>
+
+  <section id="experience" class="wrap">
+    <h2>Experience</h2>
+    <!-- Replace these placeholders with the entries from your resume, newest first -->
+    <ol class="timeline">
+      <li>
+        <h3>[Role title], [Company or organization]</h3>
+        <p class="when">[Month Year] to [Month Year]</p>
+        <p>[One or two lines on what you did and the result.]</p>
+      </li>
+      <li>
+        <h3>[Role title], [Company or organization]</h3>
+        <p class="when">[Month Year] to [Month Year]</p>
+        <p>[One or two lines on what you did and the result.]</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2>Contact</h2>
+    <p class="measure">I am open to Associate and Junior Network Engineer roles, and to frontend and database work.</p>
+    <p class="links">
+      <a href="mailto:you@example.com">you@example.com</a>
+      <a href="https://github.com/your-username">GitHub</a>
+      <a href="https://www.linkedin.com/in/your-username">LinkedIn</a>
+    </p>
+  </section>
+</main>
+
+<footer class="wrap foot">&copy; <span id="yr"></span> Your Name</footer>
+<script src="script.js"></script>
+</body>
+</html>
